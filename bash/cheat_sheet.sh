@@ -1,3 +1,12 @@
+function sequence {
+  echo 'please enter n'
+  read number
+  for i in `seq 1 $number`; 
+  do
+    echo "$i"
+  done 
+}
+
 function menu {
   filename=`basename "$0"`
   echo "filename=$filename"
@@ -28,4 +37,5 @@ function menu {
   tamano="$#"
 }
 
-menu
+sequence
+#menu

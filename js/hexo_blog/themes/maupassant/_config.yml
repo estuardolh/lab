@@ -1,5 +1,5 @@
 fancybox: true ## If you want to use fancybox please set the value to true.
-disqus: ## Your disqus_shortname, e.g. username
+disqus: estuardolh ## Your disqus_shortname, e.g. username
 gitment:
   enable: false ## If you want to use Gitment comment system please set the value to true.
   owner: ## Your GitHub ID, e.g. username
@@ -30,7 +30,7 @@ google_analytics: ## Your Google Analytics tracking id, e.g. UA-42425684-2
 baidu_analytics: ## Your Baidu Analytics tracking id, e.g. 8006843039519956000
 show_category_count: false ## If you want to show the count of categories in the sidebar widget please set the value to true.
 toc_number: true ## If you want to add list number to toc please set the value to true.
-shareto: false ## If you want to use the share button please set the value to true, you must have hexo-helper-qrcode installed.
+shareto: true ## If you want to use the share button please set the value to true, you must have hexo-helper-qrcode installed.
 busuanzi: false ## If you want to use Busuanzi page views please set the value to true.
 widgets_on_small_screens: false ## Set to true to enable widgets on small screens.
 canvas_nest:
@@ -64,6 +64,7 @@ menu:
 
 widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts, rencent_comments and links.
   - search
+  - gravatar
   - category
   - tag
   - recent_posts
@@ -71,12 +72,10 @@ widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts
   - links
 
 links:
-  - title: site-name1
-    url: http://www.example1.com/
-  - title: site-name2
-    url: http://www.example2.com/
-  - title: site-name3
-    url: http://www.example3.com/
+  - title: I am on Github
+    url: https://www.github.com/estuardolh
+  - title: Material educativo sobre Depresión
+    url: http://www.dbsalliance.org/site/PageServer?pagename=esp_about_publicationsmain
 
 timeline:
   - num: 1

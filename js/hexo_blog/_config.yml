@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
-language:
-timezone:
+title: Estuardolh.tk
+subtitle: Nihil cognitum quin praevolitum
+description: 
+author: Estuardo López
+language: en
+timezone: America/Guatemala
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://estuardolh.tk
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -61,7 +61,7 @@ tag_map:
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD
+date_format: YYYY-MM-DD HH:mm:ss
 time_format: HH:mm:ss
 
 # Pagination
@@ -80,3 +80,10 @@ deploy:
   type: git
   repo: https://github.com/estuardolh/estuardolh.github.io.git
   branch: master
+
+disqus_shortname: estuardolh
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 10

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Estuardolh.tk</title>
+  
+  <subtitle>Nihil cognitum quin praevolitum</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://estuardolh.tk/"/>
+  <updated>2018-01-01T00:31:03.014Z</updated>
+  <id>http://estuardolh.tk/</id>
+  
+  <author>
+    <name>Estuardo López</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Relato La rutina</title>
+    <link href="http://estuardolh.tk/2017/12/30/Relato-la-rutina/"/>
+    <id>http://estuardolh.tk/2017/12/30/Relato-la-rutina/</id>
+    <published>2017-12-31T00:00:00.000Z</published>
+    <updated>2018-01-01T00:31:03.014Z</updated>
+    
+    <content type="html"><![CDATA[<p>Título: La rutina.<br>Número de páginas: 24.<br>Género: Cuento.<br>Descripción: </p><blockquote><p>La lucha entre lo impalpable pero presente, entre los conflictos y el mártir, entre la existencia común de una señorita y su entorno obligatorio.</p></blockquote><p>Archivo PDF: <a href="http://www.estuardolh.tk/theme/pdf/La_rutina.pdf" target="_blank" rel="noopener">La Rutina.pdf</a></p><p>Post original: <a href="http://www.estuardolh.tk/relato-la-rutina.html" target="_blank" rel="noopener">Relato la rutina</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Título: La rutina.&lt;br&gt;Número de páginas: 24.&lt;br&gt;Género: Cuento.&lt;br&gt;Descripción: &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;La lucha entre lo impalpable pero pr
+      
+    
+    </summary>
+    
+      <category term="Literatura" scheme="http://estuardolh.tk/categories/Literatura/"/>
+    
+    
+      <category term="Guatemala" scheme="http://estuardolh.tk/tags/Guatemala/"/>
+    
+      <category term="Cuento" scheme="http://estuardolh.tk/tags/Cuento/"/>
+    
+  </entry>
+  
+</feed>

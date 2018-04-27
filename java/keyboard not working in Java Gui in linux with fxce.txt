@@ -1,0 +1,2 @@
+-- before executing an Java application, execute:
+export XMODIFIERS=""

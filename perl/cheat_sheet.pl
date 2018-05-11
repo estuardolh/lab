@@ -39,7 +39,10 @@ print "++ left: ".++$v_numero."\n";
 
 # condicion if
 # if(expresion){ bloque* } [ elsif(expresion){} [ else{} ] ]
-# while(expresion){} : mientras expresion es verdadera ejecuta.
+
+# while(condicion){bloque} : mientras expresion es verdadera ejecuta.
+# romper while con 'last'
+
 # until(expresion){} : mientras expresion es falsa ejecuta.
 
 @lista = ('jose ', 'ama ', 'con ','vehemencia.');

@@ -1,0 +1,4 @@
+ssh usuario@xx.yyy.xxx.yy ARG1=$1 'bash -s' <<'EOB'
+# code here.  argument available here: $ARG1
+exit
+EOB

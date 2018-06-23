@@ -1,0 +1,68 @@
+/**
+ * @author Estuardolh
+ */
+pre {
+    background: #030284;
+    word-wrap: break-word;
+    margin: 0px;
+    padding: 10px;
+    color: #FFFF00;
+    font-size: 14px;
+	font-weight: bold;
+    margin-bottom: 20px;
+}
+
+pre, code {
+    font-family: courier, monospace;
+}
+
+pre .comment {
+    color: #C0C0C0;
+}
+string.regexp {
+	color: #C0C0C0;
+}
+
+pre .constant {
+    color: #FFFF00;
+}
+
+pre .storage {
+    color: #FBDE2D;
+}
+
+pre .string, pre .comment.docstring {
+    color: #01FFFF;
+}
+
+pre .string.regexp, pre .support.tag.script, pre .support.tag.style {
+    color: #01FFFF;
+}
+
+pre .keyword, pre .selector {
+    color: #FFFF00;
+}
+
+pre .inherited-class {
+    font-style: italic;
+}
+
+pre .entity {
+    color: #FFFF00;
+}
+
+pre .support, *[data-language="c"] .function.call {
+    color: #FFFF00;
+}
+
+pre .variable.global, pre .variable.class, pre .variable.instance {
+    color: #FFFF00;
+}
+
+pre .number {
+    color: #008080;
+}
+
+pre .string {
+    color: #01FFFF;
+}

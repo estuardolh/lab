@@ -14,6 +14,6 @@ Género: Cuento.
 Descripción: 
 > La lucha entre lo impalpable pero presente, entre los conflictos y el mártir, entre la existencia común de una señorita y su entorno obligatorio.
 
-Archivo PDF: [La Rutina.pdf](http://www.estuardolh.tk/theme/pdf/La_rutina.pdf)
+Archivo PDF: [La Rutina.pdf](http://www.estuardolh.ga/theme/pdf/La_rutina.pdf)
 
-Post original: [Relato la rutina](http://www.estuardolh.tk/relato-la-rutina.html)
+Post original: [Relato la rutina](http://www.estuardolh.ga/relato-la-rutina.html)

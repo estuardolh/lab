@@ -1,0 +1,59 @@
+body .lst {
+border-style:double double double;
+color:#5FBEFF;
+height: 3px;
+}
+
+body .lst-separator {
+border-style:none none double;
+color:#5FBEFF;
+height: 3px;
+}
+
+body {
+	background-color: #030284;
+	color: #5FBEFF;
+	font-family:monospace;
+	font-size:15px;
+}
+span {
+font-family:monospace !important;
+font-size:15px;
+color: #5FBEFF;
+}
+a {
+font-family:monospace;
+font-size:15px;
+color: black;
+background-color: #00827D;
+text-decoration: none;
+}
+
+h1, h2, h3, h4{
+font-family:monospace;
+color: #5FBEFF;
+}
+
+abbr {
+font-family:monospace;
+}
+
+li {
+font-family:monospace;
+color: #5FBEFF;
+}
+
+address {
+font-family:monospace;
+}
+
+ul {
+font-family:monospace;
+color: #5FBEFF;
+}
+
+hr {
+border-style:double none;
+color:#5FBEFF;
+height: 3px;
+}

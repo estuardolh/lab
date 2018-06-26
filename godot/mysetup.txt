@@ -1,0 +1,27 @@
+descargar
+https://downloads.tuxfamily.org/godotengine/3.0.4/Godot_v3.0.4-stable_x11.64.zip
+https://downloads.tuxfamily.org/godotengine/3.0.4/Godot_v3.0.4-stable_export_templates.tpz
+
+> editor > Editor settings > 
+  adb > /root/Android/Sdk/platform-tools/adb
+  Jarsigner > /home/estuardolh/Documents/android-studio/jre/bin/jarsigner
+  Debug keystore > /home/estuardolh/Documents/jdk1.8.0_171/bin/debug.keystore
+
+cd /home/estuardolh/Documents/jdk1.8.0_171/bin
+  ./keytool -keyalg RSA -genkeypair -alias androiddebugkey -keypass android -keystore debug.keystore -storepass android -dname "CN=Android Debug,O=Android,C=US" -validity 9999
+
+Project
+  Export
+    Export PCK/ZIP
+     > /home/estuardolh/Downloads/Godot_v3.0.4-stable_export_templates.tpz
+
+nano .bashrc
+  
+  agregar al final:
+  
+  export ANDROID_HOME=/root/Android/Sdk
+  export ANDROID_NDK_ROOT=/home/estuardolh/Documents/android-studio/plugins/android-ndk
+  
+  ejecutar:
+  . .bashrc
+

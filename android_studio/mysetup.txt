@@ -1,0 +1,19 @@
+# to fix wrong preview UI on Android studio
+Click AppTheme on View perspective
+  > select another AppTheme than the default.  # voila!
+
+# App running on Device to testing ! ((:
+# On android device enable "USB debugging" under Developer Options...
+Run > Edit configurations > 
+  add new Android App configuration
+    
+    In section "Deployment target options"
+      > Select Open Selected Deployment Target Dialog
+      
+Run using new configuration and select Android Device 
+  
+  > Proceed without Instant...
+  # (:
+  
+
+

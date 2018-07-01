@@ -1,0 +1,12 @@
+https://downloadsapachefriends.global.ssl.fastly.net/xampp-files/5.6.36/xampp-linux-x64-5.6.36-0-installer.run?from_af=true
+sudo chmod 777 ./xampp-linux-x64-5.6.36-0-installer.run
+answer to all: y
+
+cd /opt/lampp
+
+sudo apt-get install netstat
+sudo chmod 777 ./xampp
+sudo ./xampp start
+
+#running on: 
+localhost:80

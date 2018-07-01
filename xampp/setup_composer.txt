@@ -1,0 +1,24 @@
+# get installer
+estuardolh@lab:/opt/lampp/bin$ sudo ./php -r "unlink('composer-setup.php');"
+
+# hash testing
+estuardolh@lab:/opt/lampp/bin$ sudo ./php -r "if (hash_file('SHA384', 'composer-setup.php') === '544e09ee996cdf60ece3804abc52599c22b1f40f4323403c44d44fdfdd586475ca9813a858088ffbc1f233e9b180f061') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+Installer verified
+estuardolh@lab:/opt/lampp/bin$ ./php composer-setup.php
+All settings correct for using Composer
+The installation directory "/opt/lampp/bin" is not writable
+
+# install composer
+estuardolh@lab:/opt/lampp/bin$ sudo ./php composer-setup.php
+All settings correct for using Composer
+Downloading...
+
+Composer (version 1.6.5) successfully installed to: /opt/lampp/bin/composer.phar
+Use it: php composer.phar
+
+# remove installer
+estuardolh@lab:/opt/lampp/bin$ sudo ./php -r "unlink('composer-setup.php');"
+
+# getting access  to Composer & Php to every place...
+estuardolh@lab:/opt/lampp/bin$ sudo mv composer.phar /usr/local/bin/composer
+sudo ln /opt/lampp/bin/php-5.6.36 /usr/local/bin/php

@@ -1,0 +1,4 @@
+# cmd
+ shutdown /s /f /t 0
+
+# params are like word soft+ware

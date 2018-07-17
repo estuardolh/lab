@@ -1,0 +1,8 @@
+-- windows
+VBoxManage internalcommands createrawvmdk -filename usb3.0.vmdk -rawdisk \.\PhysicalDrive2
+
+-- pre.: use virtual box pack extention
+-- https://www.howtoforge.com/using-raw-devices-in-virtualbox-vms
+-- linux
+VBoxManage internalcommands createrawvmdk -filename usb3.vmdk -rawdisk /dev/sdb
+--chown vbox:vbox usb3.vmdk

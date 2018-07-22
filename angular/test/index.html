@@ -1,0 +1,20 @@
+<html ng-app="listaApp">
+	<head>
+		<title>test</title>
+		<script src="./angular.min.js"></script>
+		<script src="app.js"></script>
+	</head>
+	
+	Query:
+	<input type="text" ng-model="query" value= "asdfas"> 
+	<button ng-click="query_me()">Proc</button>
+	<body ng-controller="listaController">
+	<ul>
+		<li ng-repeat="phone in phones">
+			<span>{{$index + 1}}</span>
+			<input type="text" value="{{phone.snippet}}"></input>
+		</li>
+	</ul>
+
+	</body>
+</html>

@@ -3,6 +3,18 @@ VBoxManage internalcommands createrawvmdk -filename usb3.0.vmdk -rawdisk \.\Phys
 
 -- pre.: use virtual box pack extention
 -- https://www.howtoforge.com/using-raw-devices-in-virtualbox-vms
+-- https://askubuntu.com/questions/25596/how-to-set-up-usb-for-virtualbox
 -- linux
-VBoxManage internalcommands createrawvmdk -filename usb3.vmdk -rawdisk /dev/sdb
---chown vbox:vbox usb3.vmdk
+
+-- no funcional:
+  -- sudo apt-get install gnome-system-tools
+  -- open: user and groups
+  -- select: Manage groups
+  -- select: vboxusers, click add
+  -- write: vbox
+  VBoxManage internalcommands createrawvmdk -filename usb.vmdk -rawdisk /dev/sdb
+  --chown vbox:vbox usb.vmdk
+
+-- funcional:
+  sudo VirtualBox
+  -- seleccionar imagen de disco usb.vmdk

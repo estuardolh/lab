@@ -1,0 +1,19 @@
+# install docker on OS: Ubuntu 18.04 bionic
+sudo apt-get install apt-transport-https ca-certificates curl
+sudo apt-get install software-properties-common
+# move to home
+cd
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo apt-key fingerprint 0EBFCD88
+sudo nano /etc/apt/sources.list
+  # add:
+  deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable
+sudo apt-get update
+sudo apt-get install docker-ce
+# verify docker is up
+systemctl status docker
+  # ...
+  # Active: active (running) since Thu 2018-08-09 11:02:54 CST; 47s ago
+  # ...
+  # last line: ago 09 11:02:54 lhpc systemd[1]: Started Docker Application Container Engine.
+

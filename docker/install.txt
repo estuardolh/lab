@@ -1,4 +1,5 @@
 # install docker on OS: Ubuntu 18.04 bionic
+# ---
 sudo apt-get install apt-transport-https ca-certificates curl
 sudo apt-get install software-properties-common
 # move to home

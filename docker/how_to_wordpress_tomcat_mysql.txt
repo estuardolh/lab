@@ -1,0 +1,35 @@
+# how to configure wordpress + mysql
+# ---
+# download
+sudo docker pull tomcat
+sudo docker pull wordpress
+sudo docker pull mysql
+# run
+sudo docker run tomcat
+
+# sudo docker inspect mysql
+# check version of mysql
+# result: 8.0.12
+
+# run mysql
+  # source: https://hub.docker.com/_/mysql/
+  # name: mysql_example
+  # root pazz: pass_example
+  sudo docker run --name mysql_example -e MYSQL_ROOT_PASSWORD=pass_example -d mysql:8.0.12
+  
+  # network info
+  sudo docker network inspect bridge
+  # on object Name: mysql_example:
+  # IPv4Address: 172.17.0.3
+  
+  # to connect
+  sudo docker ps
+  # mysql row, ports column: 3306/tcp
+  
+  # sqldeveloper
+  # On "zero date handling" select: Round to 0001-01-01
+  # use mysql
+
+# create network: red1
+sudo docker network create --driver "bridge" --subnet "177.176.5.4/18" red1
+

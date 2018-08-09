@@ -1,0 +1,42 @@
+# basic
+# ---
+# process up
+sudo docker ps
+
+# images downloaded
+sudo docker images
+
+# search images
+sudo docker search <image name>
+
+# download image
+sudo docker pull tomcat
+
+# save changes in another image
+sudo docker push <container ID>
+
+# see docker image information(e. version)
+sudo docker inspect <image name>
+
+# start a image
+sudo docker run <image name>
+sudo docker run -it <image name> # it runs image in interactive and attached mode
+
+# stop a container
+sudo docker stop <container "NAMES">
+
+# remove existing container
+# if is running then stop it
+sudo docker rm <container "NAMES">
+
+# remove existing image
+sudo docker rmi <container name>
+
+# checking network bridge
+sudo docker network inspect bridge
+
+# see network list
+sudo docker network ls
+
+# create network
+sudo docker network create --driver "<network type>" --subnet "<ip>/<port>" <network name>  # the default network type is bridge

@@ -48,3 +48,6 @@ sudo docker network ls
 
 # create network
 sudo docker network create --driver "<network type>" --subnet "<ip>/<port>" <network name>  # the default network type is bridge
+
+# copy files !
+sudo docker cp 

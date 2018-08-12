@@ -1,0 +1,2 @@
+# how to run a war on tomcat
+sudo docker run -it -v "$(pwd)/sample.war:/usr/local/tomcat/webapps/sample.war" -v "$(pwd)/so_fase1.war:/usr/local/tomcat/webapps/os_fase1.war" --name tomcat_java --network red2 tomcat

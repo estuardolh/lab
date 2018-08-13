@@ -1,1 +1,2 @@
-php /usr/local/bin/composer create-project --prefer-dist cakephp/app <name here>
+php /usr/local/bin/composer create-project --prefer-dist cakephp/app <project name here>
+sudo chown estuardolh:estuardolh -R /<project name here>

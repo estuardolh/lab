@@ -1,7 +1,9 @@
 # basic
 # ---
-# process up
+# container process up
 sudo docker ps
+# all container process
+sudo docker ps -a
 
 # images downloaded
 sudo docker images
@@ -16,11 +18,17 @@ sudo docker pull tomcat
 sudo docker push <container ID>
 
 # see docker image information(e. version)
-sudo docker inspect <image name>
+sudo docker inspect <container "NAMES">
 
 # start a image
 sudo docker run <image name>
-sudo docker run -it <image name> # it runs image in interactive and attached mode
+sudo docker run -it <image name> # it runs image in interactive and attached mode, to exit Ctrl+p, Ctrl+q
+
+# to get back into runtime
+sudo docker attach <container "NAMES">
+
+# to get shell
+sudo docker exec -it <container "NAMES"> bash
 
 # stop a container
 sudo docker stop <container "NAMES">
@@ -42,3 +50,6 @@ sudo docker network ls
 
 # create network
 sudo docker network create --driver "<network type>" --subnet "<ip>/<port>" <network name>  # the default network type is bridge
+
+# copy files !
+sudo docker cp 

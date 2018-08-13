@@ -31,6 +31,8 @@ sudo docker rm <container "NAMES">
 
 # remove existing image
 sudo docker rmi <container name>
+# using container and tag
+sudo docker rmi <container_name:tag>
 
 # checking network bridge
 sudo docker network inspect bridge

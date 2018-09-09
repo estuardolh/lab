@@ -53,3 +53,11 @@ sudo docker network create --driver "<network type>" --subnet "<ip>/<port>" <net
 
 # copy files !
 sudo docker cp 
+
+# exportar container
+sudo docker export <container id> > /direccion/aqui/asdfa.tar
+
+cat asdfa.tar | sudo docker import - nombre_de_container
+
+activamq
+

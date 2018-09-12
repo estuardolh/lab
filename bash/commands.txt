@@ -6,3 +6,5 @@ ps --sort=-pcpu auxwww | grep java | head -n 1
 
 -- while en 1 linea
 while sleep 1; do echo thinking; done
+
+

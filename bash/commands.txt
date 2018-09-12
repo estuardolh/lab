@@ -7,4 +7,5 @@ ps --sort=-pcpu auxwww | grep java | head -n 1
 -- while en 1 linea
 while sleep 1; do echo thinking; done
 
-
+-- forzar charset...
+iconv -f UTF-8 -t ISO-8859-1 inputfile.txt >outputfile.txt

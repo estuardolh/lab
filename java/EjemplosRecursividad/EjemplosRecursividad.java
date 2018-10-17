@@ -22,6 +22,7 @@ public class EjemplosRecursividad {
       System.out.println("");
       System.out.println("1. piramide");
       System.out.println("2. fibonacci");
+      System.out.println("3. ?");
       System.out.println("0, q. salir");
       try{
         BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
@@ -33,6 +34,8 @@ public class EjemplosRecursividad {
         }else if(linea.trim().equals("2")){
           int limite_superior = Integer.parseInt( obtenerLineaDeUsuario("  Hasta: ") );
           mostrarFibonacci( limite_superior );
+        }else if(linea.trim().equals("3")){
+          // to to here
         }else if(linea.trim().equals("0") || linea.trim().equals("q")){
           System.out.println("salio.");
           break;
@@ -47,32 +50,9 @@ public class EjemplosRecursividad {
   }
 
   public void mostrarPiramide( int piramide_altura ){
-    piramide( piramide_altura );
+    PiramideRecursividad.mostrarAscii( piramide_altura );
   }
   public void mostrarFibonacci( int limite_superior ){
-    if(limite_superior == 0){
-      System.out.println("    0");
-    }else if(limite_superior > 0){
-      System.out.println("    1");
-      fibonacci(1,1, limite_superior);
-    }
-  }
-
-  public void piramide( int altura ){
-    if(altura > 0){
-      piramide(--altura);
-      System.out.print("    ");
-      for(int i = 0; i <= altura; i++){
-        System.out.print("*");
-      }
-    }
-    System.out.println("");
-  }
-
-  public int fibonacci( int i_0, int i_1, int limite_superior ){
-    if(i_1 > limite_superior) return 0;
-
-    System.out.println( "    " + i_1 );
-    return fibonacci(i_1, i_0 + i_1, limite_superior);
+    FibonacciRecursividad.mostrarAscii( limite_superior );
   }
 }

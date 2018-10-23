@@ -22,7 +22,7 @@ public class EjemplosRecursividad {
       System.out.println("");
       System.out.println("1. piramide");
       System.out.println("2. fibonacci");
-      System.out.println("3. ?");
+      System.out.println("3. descomposicion");
       System.out.println("0, q. salir");
       try{
         BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
@@ -35,7 +35,8 @@ public class EjemplosRecursividad {
           int limite_superior = Integer.parseInt( obtenerLineaDeUsuario("  Hasta: ") );
           mostrarFibonacci( limite_superior );
         }else if(linea.trim().equals("3")){
-          // to to here
+          int n = Integer.parseInt( obtenerLineaDeUsuario("  Numero a descomponer: ") );
+          mostrarDescomposiciones( n );
         }else if(linea.trim().equals("0") || linea.trim().equals("q")){
           System.out.println("salio.");
           break;
@@ -54,5 +55,8 @@ public class EjemplosRecursividad {
   }
   public void mostrarFibonacci( int limite_superior ){
     FibonacciRecursividad.mostrarAscii( limite_superior );
+  }
+  public void mostrarDescomposiciones( int n ){
+    DescomposicionRecursividad.descomponer( n, 0);
   }
 }

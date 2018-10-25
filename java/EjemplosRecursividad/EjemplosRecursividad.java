@@ -23,6 +23,7 @@ public class EjemplosRecursividad {
       System.out.println("1. piramide");
       System.out.println("2. fibonacci");
       System.out.println("3. descomposicion");
+      System.out.println("4. palindromo");
       System.out.println("0, q. salir");
       try{
         BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
@@ -37,6 +38,9 @@ public class EjemplosRecursividad {
         }else if(linea.trim().equals("3")){
           int n = Integer.parseInt( obtenerLineaDeUsuario("  Numero a descomponer: ") );
           mostrarDescomposiciones( n );
+        }else if(linea.trim().equals("4")){
+          String palabra =  obtenerLineaDeUsuario("  Ingresar palabra: ");
+          mostrarPalindromo( palabra );
         }else if(linea.trim().equals("0") || linea.trim().equals("q")){
           System.out.println("salio.");
           break;
@@ -58,5 +62,8 @@ public class EjemplosRecursividad {
   }
   public void mostrarDescomposiciones( int n ){
     DescomposicionRecursividad.descomponer( n, 0);
+  }
+  public void mostrarPalindromo( String palabra ){
+    System.out.println(PalindromoRecursividad.esPalindromo( palabra, 0)?"es palindromo":"no es palindromo");
   }
 }

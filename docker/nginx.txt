@@ -1,0 +1,6 @@
+sudo docker run -it --name "nx" -v /home/estuardolh/so_octubre20/nginx/nginx.conf:/etc/nginx/conf.d/default.conf -p 80:80 nginx
+
+# ambos funcionan sobre puerto 8080 no 8081/2...
+sudo docker run -it --name "tomcat1" -p 8081:8080 -v "/home/estuardolh/so_octubre20/tomcat/parte1_practica.war:/usr/local/tomcat/webapps/parte1_practica.war" tomcat
+sudo docker run -it --name "tomcat2" -p 8082:8080 -v "/home/estuardolh/so_octubre20/tomcat/parte1_practica.war:/usr/local/tomcat/webapps/parte1_practica.war" tomcat
+

@@ -64,6 +64,6 @@ public class EjemplosRecursividad {
     DescomposicionRecursividad.descomponer( n, 0);
   }
   public void mostrarPalindromo( String palabra ){
-    System.out.println(PalindromoRecursividad.esPalindromo( palabra, 0)?"es palindromo":"no es palindromo");
+    System.out.println(PalindromoRecursividad.esPalindromo( palabra )?"es palindromo":"no es palindromo");
   }
 }

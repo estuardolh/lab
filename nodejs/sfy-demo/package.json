@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "express": "3.11.0",
-    "superagent": "3.7.0",
     "consolidate": "0.9.1",
-    "handlebars": "1.0.12"
+    "express": "^4.16.4",
+    "handlebars": "^4.0.12",
+    "superagent": "3.7.0"
   },
   "repository": "",
   "author": "Azat Mardan",

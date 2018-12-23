@@ -81,7 +81,7 @@ deploy:
   repo: https://github.com/estuardolh/estuardolh.github.io.git
   branch: master
 
-disqus_shortname: estuardolh
+#disqus_shortname: estuardolh
 
 feed:
   type: atom

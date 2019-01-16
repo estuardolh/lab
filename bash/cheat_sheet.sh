@@ -35,6 +35,9 @@ function menu {
   
   # cantidad de argumentos
   tamano="$#"
+  
+  # declare array
+  array1=()
 }
 
 sequence

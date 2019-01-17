@@ -1,0 +1,6 @@
+to change default prompt:
+
+at home:
+```
+nano .config/fish/functions/fish_prompt.fish
+```

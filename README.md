@@ -1,2 +1,2 @@
 # lab
-essay &amp; error
+trial &amp; error

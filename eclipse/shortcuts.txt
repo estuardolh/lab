@@ -1,0 +1,9 @@
+# eclipse keys
+---
+	alt shift t     show refactor quick menu
+	ctrl shift m    import
+	alt shift j     documentation
+	alt shift s+v	sobreescribir o implementar metodo
+	alt shift s+r	generar getters and setters	
+	alt shift s+o	generar constructor
+	Ctrl + Q	ultimo lugar de edicion

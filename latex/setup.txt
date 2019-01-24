@@ -1,0 +1,4 @@
+# get full latex package
+# downloads 2GB(at jan 24 15hrs 2019)
+apt-get install texlive-full
+

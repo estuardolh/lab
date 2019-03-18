@@ -1,0 +1,13 @@
+# get wiki
+sudo docker pull mediawiki
+# get mysql
+sudo docker pull mysql
+
+# create mysql container
+docker-compose docker-compose-mysql.yml
+
+# if not installed, install docker-compose
+https://docs.docker.com/compose/install/#install-compose
+
+# install container using docker-compose
+https://hub.docker.com/_/mysql/

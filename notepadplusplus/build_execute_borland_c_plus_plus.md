@@ -1,13 +1,13 @@
 Run...
 The Program to Run
 
-To compile & execute borland cpp file in notepad++
+To compile & execute borland cpp file in notepad++:
 
 ```
 C:\compile_bcpp.bat "$(CURRENT_DIRECTORY)\$(NAME_PART)" "$(NAME_PART)"
 ```
 
-file compile_bcpp.bat content:
+file C:\compile_bcpp.bat content:
 ```
 echo off
 
@@ -27,3 +27,4 @@ pause
 
 "%arg2%.exe"
 ```
+have a happy programming school day

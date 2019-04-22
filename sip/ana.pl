@@ -14,6 +14,7 @@ sub help {
   $ans = $ans."\nOPTIONS:";
   $ans = $ans."\n  unique ip\tprint unique ips found in log.";
   $ans = $ans."\n  unique host\tprint unique hosts found in log.";
+  $ans = $ans."\n  unique telephone numbers";
   $ans = $ans."\n";
 
   return $ans;
@@ -55,7 +56,13 @@ sub switch {
     return getUniqueIp($_[2]);
   }elsif($_[0] eq 'unique' && $_[1] eq 'host'){
     return getUniqueHosts($_[2]);
+  }elsif($_[0] eq 'unique' && $_[1] eq 'telephone'){
+    return getUniqueTelephoneNumbers($_[2]);
   }
+}
+
+sub getUniqueTelephoneNumbers {
+  return `grep -Eoi "\\+[0-9]+|\\*[0-9]+" $_[0] | sort | uniq`;
 }
 
 sub main {

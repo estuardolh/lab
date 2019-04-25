@@ -21,7 +21,7 @@ if (len(sys.argv) > 1):
   for a_line in a_file:
     if(len(a_line) == 1 and a_line[0] == '\n'):
       # sort block of lines
-      a_a_file = os.popen('echo "'+a_block_of_lines+'" | sort')
+      a_a_file = os.popen('echo "'+a_block_of_lines.replace('<','\<').replace('>','\>')+'" | sort')
       wow = a_a_file.read()
       output_text += '\n\n'+wow
       a_block_of_lines = ''
@@ -30,7 +30,7 @@ if (len(sys.argv) > 1):
       a_block_of_lines += a_line
   
   # sort block of lines / last time
-  a_a_file = os.popen('echo "'+a_block_of_lines+'" | sort')
+  a_a_file = os.popen('echo "'+a_block_of_lines.replace('<','\<').replace('>','\>')+'" | sort')
   wow = a_a_file.read()
   output_text += wow+'\n'
   
@@ -38,7 +38,7 @@ if (len(sys.argv) > 1):
   
   # write new line
   text_file = open(sys.argv[1]+".out", "w")
-  text_file.write(output_text)
+  text_file.write(output_text.replace('\<','<').replace('\>','>'))
   text_file.close()
 else:
   help()

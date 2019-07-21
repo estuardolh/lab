@@ -1,0 +1,17 @@
+a
+block
+of lines
+here
+
+another
+block
+of lines
+here
+
+also
+there is
+another block
+(of lines)
+here
+
+end ok

@@ -1,0 +1,2 @@
+# gen a 4mb size file
+fallocate -l 4M 4MB

@@ -1,0 +1,9 @@
+# ping
+ansible -i [inv-file] -m ping [group-target]
+
+# using group_vars(aves named) and instructions in playbook:: using hosts.ini(aves group) -> playbook using -k(ask for password)
+ansible-playbook -i hosts.ini ./playbooks/playbook.yml -k
+
+# just executes ping:: aplying ping module for hosts.ini for aves
+ansible -i hosts.ini -m ping aves -k
+

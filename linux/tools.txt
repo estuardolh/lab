@@ -1,0 +1,9 @@
+# gen a 4mb size file
+fallocate -l 4M 4MB
+
+
+# terraforming new(very cheap) droplet
+apt update
+apt upgrade
+apt install net-tools
+apt-get install python

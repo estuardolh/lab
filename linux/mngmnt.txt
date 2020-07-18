@@ -1,3 +1,12 @@
 -- change password
 --  using root user
-passwd <user-here>
+passwd <user-name-here>
+-- unlock user
+passwd -u <user-name-here>
+-- user status
+chage -l <user-name-here>
+
+-- ssh user status
+pam_tally2 --user=<user-name-here>
+-- reset ssh user
+pam_tally2 --user=<user-name-here> --reset

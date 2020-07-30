@@ -1,0 +1,15 @@
+kubectl get deployments
+kubectl get replicaset
+kubectl get pods
+kubectl --context=student-context get pods # using context
+
+kubectl get pods -L k8s-app
+kubectl get pods -l k8s-app=webserver # using selector / labels
+
+-- kubectl delete deployments webserv***
+
+kubectl expose deployment webserver --name=web-service --type=NodePort
+
+kubectl describe service web-service
+
+minikube ip # +> kubectl describe service web-service ## use with NodePort

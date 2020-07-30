@@ -1,0 +1,13 @@
+[Unit]
+Description=abc Container
+Requires=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/docker start abc
+ExecStop=/usr/bin/docker stop abc
+
+[Install]
+WantedBy=multi-user.target
+

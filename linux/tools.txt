@@ -7,3 +7,12 @@ apt update
 apt upgrade
 apt install net-tools
 apt-get install python
+
+#   pretty json
+python3 -m json.tool
+
+# tar files
+#   uncompress
+tar -xvf <tarfilename>
+#   compress
+tar -czvf <tarfilename> <dir/file path>

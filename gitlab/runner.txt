@@ -1,0 +1,4 @@
+# logs
+journalctl -u gitlab-runner
+# debug mode
+gitlab-runner --debug run

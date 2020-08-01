@@ -1,5 +1,11 @@
 -- change password
---  using root user
+
+-- add new user
+adduser usename
+-- welcome to root
+sudo usermod -aG wheel <username>
+
+--  set pass
 passwd <user-name-here>
 -- unlock user
 passwd -u <user-name-here>
@@ -10,3 +16,8 @@ chage -l <user-name-here>
 pam_tally2 --user=<user-name-here>
 -- reset ssh user
 pam_tally2 --user=<user-name-here> --reset
+
+-- needs
+ll info
+prl yes
+pa yes

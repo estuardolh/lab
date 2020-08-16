@@ -16,3 +16,6 @@ python3 -m json.tool
 tar -xvf <tarfilename>
 #   compress
 tar -czvf <tarfilename> <dir/file path>
+
+# check ntw interfaces
+ls -A /sys/class/net

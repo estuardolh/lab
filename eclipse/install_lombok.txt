@@ -1,0 +1,10 @@
+https://projectlombok.org/setup/eclipse
+
+on eclipse.ini add at the end:
+  -javaagent:lombok.jar
+  -Xbootclasspath/a:lombok.jar
+
+use full path from .p2
+
+
+on project enable process annotations

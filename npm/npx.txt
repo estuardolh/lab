@@ -1,0 +1,8 @@
+
+-- uninstall/update npx 
+sudo npm uninstall -g npx
+sudo rm /usr/bin/npx
+sudo npm install -g npx@10.2.2
+
+-- create react project
+npx create-react-app signweb

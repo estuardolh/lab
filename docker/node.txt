@@ -1,0 +1,1 @@
+sudo docker run -d --rm -p 3000:3000 --name node -v "$PWD/xyz":/usr/src/app -w /usr/src/app node bash -c "npm start"

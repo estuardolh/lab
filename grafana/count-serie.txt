@@ -1,0 +1,8 @@
+SELECT
+  $__timeGroup(modified_at,'1h') as time_sec,
+  COUNT(id) as score,
+  category as metric
+FROM test
+WHERE $__timeFilter(modified_at)
+GROUP BY 1, category
+ORDER BY 1  

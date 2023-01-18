@@ -1,0 +1,2 @@
+alias create-keys='ssh-keygen -t rsa'
+alias gitp='git add --all && git commit && git push origin'

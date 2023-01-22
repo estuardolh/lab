@@ -1,0 +1,9 @@
+SELECT
+  COUNT(value),
+  category
+FROM
+  task.test
+GROUP BY
+  category
+LIMIT
+  50

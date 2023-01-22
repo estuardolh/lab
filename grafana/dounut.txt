@@ -1,7 +1,0 @@
-SELECT
-  modified_at as time,
-  category as metric,
-  COUNT(*) as value
-FROM
-  test
-GROUP BY category

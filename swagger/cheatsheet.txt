@@ -1,0 +1,30 @@
+docker pull swaggerapi/swagger-codegen-cli-v3
+docker run --rm -v $(pwd):/local swaggerapi/swagger-codegen-cli-v3 generate -i /local/openapi.yaml -l python-flask -o /local/out/python -t /local/custom_templates/
+
+git clone --depth=1 https://github.com/swagger-api/swagger-codegen.git
+cp swagger-codegen/modules/swagger-codegen/src/main/resources/flaskConnexion/* ./swagger/custom_templates/
+
+sudo chown test:test -R ./python
+
+python3 -m venv $(pwd)
+source ./bin/activate
+pip3 install -r ./requirements.txt
+
+cd ..
+python3 -m swagger_server
+
+-- clean
+deactivate
+rm -rf ./bin ./share ./lib ./lib64
+
+docker rmi swaggerapi/swagger-codegen-cli-v3
+
+-- requirements.txt
+
+connexion[swagger-ui]
+flask
+flasgger
+
+--- configuration.py
+class Configuration:
+    test=1
